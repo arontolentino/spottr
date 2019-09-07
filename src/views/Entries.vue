@@ -10,14 +10,14 @@
 </template>
 
 <script>
-import AppNavigation from "@/components/AppNavigation";
-import EntryList from "@/components/EntryList";
+import AppNavigation from '@/components/AppNavigation';
+import EntryList from '@/components/EntryList';
 
 export default {
-  name: "Entries",
+  name: 'Entries',
   data: function() {
     return {
-      title: "Entries"
+      title: 'Entries'
     };
   },
   components: {

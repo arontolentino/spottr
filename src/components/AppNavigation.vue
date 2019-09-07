@@ -22,15 +22,19 @@
     </v-navigation-drawer>
 
     <v-app-bar color="grey darken-4" dark app>
+      <v-btn color="green accent-4" dark small absolute bottom right fab>
+        <v-icon>mdi-plus</v-icon>
+      </v-btn>
+
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-toolbar-title>{{ title }}</v-toolbar-title>
 
-      <div class="flex-grow-1"></div>
+      <!-- <div class="flex-grow-1"></div>
 
       <v-btn icon>
         <v-icon>mdi-magnify</v-icon>
-      </v-btn>
+      </v-btn>-->
     </v-app-bar>
   </div>
 </template>
