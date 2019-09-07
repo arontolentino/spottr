@@ -1,17 +1,17 @@
-import "material-design-icons-iconfont/dist/material-design-icons.css";
-import "@/firebase/index.js";
+import '@mdi/font/css/materialdesignicons.css';
+import '@/firebase/index.js';
 
-import Vue from "vue";
-import App from "./App.vue";
-import router from "./router";
-import store from "./store";
-import vuetify from "./plugins/vuetify";
+import Vue from 'vue';
+import App from './App.vue';
+import router from './router';
+import store from './store';
+import vuetify from './plugins/vuetify';
 
 Vue.config.productionTip = false;
 
-new Vue({
+export default new Vue({
   router,
   store,
   vuetify,
   render: h => h(App)
-}).$mount("#app");
+}).$mount('#app');
