@@ -34,7 +34,7 @@
         color="green accent-4"
         class="mb-5"
         :disabled="!valid"
-        @click="logIn"
+        @click.enter="logIn"
       >Sign In</v-btn>
 
       <v-btn
@@ -44,13 +44,19 @@
         color="green accent-4"
         class="mb-5"
         :disabled="!valid"
-        @click="signUp"
+        @click.enter="signUp"
       >Register</v-btn>
     </v-form>
 
     <p v-if="form === 'login'">
       Not registered yet?
       <router-link to="/register" style="color: #00C853">Create an account</router-link>
+    </p>
+
+    <p v-else>
+      By creating an account, you agree to the Spotter
+      <router-link to="/" style="color: #00C853">Terms of Service</router-link>and
+      <router-link to="/" style="color: #00C853">Privacy Policy.</router-link>
     </p>
   </div>
 </template>

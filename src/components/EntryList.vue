@@ -4,6 +4,7 @@
       <v-list-item two-line>
         <v-list-item-content>
           <v-list-item-title class="headline mb-1">Add Workout</v-list-item-title>
+          <v-list-item-subtitle>{{ new Date() | moment("dddd, MMMM Do YYYY") }}</v-list-item-subtitle>'
         </v-list-item-content>
       </v-list-item>
 
@@ -36,28 +37,28 @@
 
 <script>
 export default {
-  name: "EntryList",
+  name: 'EntryList',
   data: function() {
     return {
       workouts: [
         {
           date: Date(),
-          name: "Back and Biceps",
+          name: 'Back and Biceps',
           count: 10
         },
         {
           date: Date(),
-          name: "Chest and Triceps",
+          name: 'Chest and Triceps',
           count: 5
         },
         {
           date: Date(),
-          name: "Quads and Hamstrings",
+          name: 'Quads and Hamstrings',
           count: 12
         },
         {
           date: Date(),
-          name: "Cardio",
+          name: 'Cardio',
           count: 5
         }
       ]
