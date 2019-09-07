@@ -77,12 +77,12 @@ export default new Vuex.Store({
         .then(() => {
           commit('setUser', null);
           commit('setIsAuthenticated', false);
-          router.push('/log-in');
+          router.push('/login');
         })
         .catch(() => {
           commit('setUser', null);
           commit('setIsAuthenticated', false);
-          router.push('/log-in');
+          router.push('/login');
         });
     },
 

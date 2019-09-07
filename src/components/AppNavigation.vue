@@ -16,7 +16,7 @@
 
       <template v-slot:append>
         <div class="pa-2">
-          <v-btn block>Logout</v-btn>
+          <v-btn @click="signOut" block>Logout</v-btn>
         </div>
       </template>
     </v-navigation-drawer>
@@ -37,19 +37,24 @@
 
 <script>
 export default {
-  name: "Drawer",
+  name: 'Drawer',
   data() {
     return {
       drawer: null,
       items: [
-        { title: "Entries", icon: "dashboard", url: "entries" },
-        { title: "Workouts", icon: "dashboard" },
-        { title: "Analytics", icon: "account_box" },
-        { title: "History", icon: "gavel" }
+        { title: 'Entries', icon: 'dashboard', url: 'entries' },
+        { title: 'Workouts', icon: 'dashboard' },
+        { title: 'Analytics', icon: 'account_box' },
+        { title: 'History', icon: 'gavel' }
       ]
     };
   },
-  props: ["title"]
+  props: ['title'],
+  methods: {
+    signOut() {
+      this.$store.dispatch('signOut');
+    }
+  }
 };
 </script>
 
