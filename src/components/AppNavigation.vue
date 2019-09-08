@@ -1,7 +1,7 @@
 
 <template>
   <div>
-    <v-navigation-drawer class="grey darken-4" v-model="drawer" dark app>
+    <v-navigation-drawer id="nav-drawer" class="grey darken-4" v-model="drawer" dark app>
       <v-list>
         <v-list-item v-for="item in items" :key="item.title" link>
           <v-list-item-icon>

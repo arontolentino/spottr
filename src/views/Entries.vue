@@ -1,12 +1,10 @@
 <template>
-  <span>
-    <AppNavigation :title="title"></AppNavigation>
-    <v-content>
-      <v-container>
-        <EntryList></EntryList>
-      </v-container>
-    </v-content>
-  </span>
+  <v-content>
+    <AppNavigation :title="title" />
+    <v-container>
+      <EntryList></EntryList>
+    </v-container>
+  </v-content>
 </template>
 
 <script>

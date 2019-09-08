@@ -195,6 +195,80 @@ export default {
               ]
             }
           ]
+        },
+        {
+          date: Date(),
+          name: 'Leg',
+          excercises: [
+            {
+              name: 'Flat Barbell Bench Press',
+              sets: [
+                {
+                  weight: 225,
+                  reps: 10
+                },
+                {
+                  weight: 225,
+                  reps: 10
+                },
+                {
+                  weight: 225,
+                  reps: 10
+                }
+              ]
+            },
+            {
+              name: 'Weighted Dips',
+              sets: [
+                {
+                  weight: 180,
+                  reps: 8
+                },
+                {
+                  weight: 180,
+                  reps: 6
+                },
+                {
+                  weight: 180,
+                  reps: 5
+                }
+              ]
+            },
+            {
+              name: 'Incline Barbell Bench Press',
+              sets: [
+                {
+                  weight: 60,
+                  reps: 8
+                },
+                {
+                  weight: 60,
+                  reps: 6
+                },
+                {
+                  weight: 60,
+                  reps: 5
+                }
+              ]
+            },
+            {
+              name: 'Tricep Pulldowns',
+              sets: [
+                {
+                  weight: 40,
+                  reps: 8
+                },
+                {
+                  weight: 40,
+                  reps: 6
+                },
+                {
+                  weight: 40,
+                  reps: 5
+                }
+              ]
+            }
+          ]
         }
       ]
     };
